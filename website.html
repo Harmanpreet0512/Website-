@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Harsimran Wood & Aluminium Fabricators
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body 
+        {
+            background: url('wood.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container 
+        {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        
+        header 
+        {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 
+        {
+            margin-bottom: 10px;
+        }
+        nav 
+        {
+            background-color: grey;
+            padding: 15px 0;
+        }
+        nav ul 
+        {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        nav ul li 
+        {
+            margin: 0 15px;
+        }
+        nav ul li a 
+        {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #555;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover 
+        {
+            background-color: green;
+        }
+
+        .hero
+         {
+            color: #fff;
+            text-align: center;
+            padding: 150px 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero h2
+         {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .hero p 
+        {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+        .btn
+         {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: green;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover 
+        {
+            background-color: #444;
+        }
+
+        .about, .services, .testimonials, .contact
+         {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .about, .services
+         {
+            background-color: #fff;
+        }
+        .testimonials 
+        {
+            background-color: #333;
+            color: #fff;
+        }
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .services .service-item, .testimonials .testimonial-item
+         {
+            margin: 20px 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .grid-container 
+        {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .grid-container img
+         {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .contact form
+        
+        {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact button {
+            padding: 10px 20px;
+            background-color: green;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact button:hover 
+        {
+            background-color: #444;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Harsimran Wood & Aluminium Fabricators</h1>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="#home" onclick="scrollToSection(event, 'home')">Home</a></li>
+                    <li><a href="#about" onclick="scrollToSection(event, 'about')">About Us</a></li>
+                    <li><a href="#services" onclick="scrollToSection(event, 'services')">Services</a></li>
+                    <li><a href="#contact" onclick="scrollToSection(event, 'contact')">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Craftsmanship with Precision</h2>
+            <p>We specialize in custom wood and aluminium fabrication. From doors and windows to bespoke furniture, we bring your vision to life.</p>
+            <a href="#about" class="btn" onclick="scrollToSection(event, 'about')">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Harsimran Wood & Aluminum Fabricators</h2>
+            <p>With over 20 years of experience in wood and aluminium fabrication, we provide high-quality, durable solutions for both residential and commercial projects. Our skilled craftsmen are dedicated to meeting your unique design needs.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>Aluminium Fabrication</h3>
+                <p>We specialize in custom aluminum window frames, doors, and partitions for a modern and sleek look. We also provide aluminium sliding doors, A.C.P, H.P.L cladding, structure glazing, and all types of ceilings.</p>
+                <div class="grid-container">
+                    <img src="raling.webp" alt="Aluminum Railing">
+                    <img src="Window.jpg" alt="Aluminum Window">
+                    <img src="eg.jpg" alt="Example Fabrication">
+                    <img src="Window2.jpg" alt="Aluminum Window Design">
+                </div>
+            </div>
+            <div class="service-item">
+                <h3>Woodwork & Joinery</h3>
+                <p>From furniture to interior woodwork, our bespoke designs enhance the beauty of your space.</p>
+            </div>
+            <div class="service-item">
+                <h3>Custom Designs</h3>
+                <p>We work closely with clients to deliver unique and customized designs that meet specific project requirements, including sliding main gate doors with unique designs.</p>
+                <div class="grid-container">
+                    <img src="sd1.jpg" alt="Sliding Gate 1">
+                    <img src="sd2.jpg" alt="Sliding Gate 2">
+                    <img src="sd3.jpg" alt="Sliding Gate 3">
+                    <img src="sd4.jpg" alt="Sliding Gate 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial-item">
+                <p>"Harsimran Wood & Aluminium Fabricators exceeded our expectations with their impeccable design and quality. Highly recommend!"</p>
+                <h4>- Satisfied Client</h4>
+            </div>
+            <div class="testimonial-item">
+                <p>"Professional, timely, and high-quality work. Our aluminum windows look amazing."</p>
+                <h4>- Another Client</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>
+                <font color="Black">Contact Us</font>
+            </h2>
+            <form onsubmit="handleFormSubmit(event)">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; 2024 Harsimran Wood & Aluminium Fabricators. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script>
+            function scrollToSection(event, sectionId) 
+        {
+            event.preventDefault();
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+        function handleFormSubmit(event)
+         {
+            event.preventDefault();
+            alert("Thank you for your message! We will get back to you shortly.");
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
